@@ -1,0 +1,232 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar{
+	background-color: rgba(38, 38,38,.9);
+	padding: .5em;
+	
+	z-index: 1000;
+}
+
+.navbar-brand{
+	font-family: Fjalla One, sans-serif;
+	text-shadow: 2px 2px rgba(115, 115, 115,.8);
+	font-size: 1.8em;
+}
+
+.fa-stream{
+	color: #ffff;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.nav-link,.navbar-brand{
+	color: rgb(255, 255, 255);
+	text-align: right;
+}
+
+.landing{
+	/*background: linear-gradient(to bottom,
+   	rgba(0, 0, 0,.7),
+  	rgba(0,0,0,.5)),url(../images/pencil.jpg);*/
+   	background-image:url("../images/pencil.jpg");
+	background-size:cover;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+.devname{
+	text-align: center;
+	color:#ffff;
+	text-shadow: 3px 3px rgba(115, 115, 115,.8);
+	padding-bottom:0rem;
+	font-family: Source Sans Pro, sans-serif;
+	margin: 0;
+}
+.devnamepos{
+	text-align: center;
+	color: rgb(255, 255, 204);
+	font-size: 2.5rem;
+	padding: 0;
+	font-family: Fjalla One, sans-serif;
+	text-shadow: 2px 2px rgba(115, 115, 115,.8);
+	font-style: italic;
+}
+
+.nameimg{
+	top:55%;
+	left: 35%;
+	position: absolute;
+	transform: translate(-55%,-35%);
+	display: inline-block;
+	width: 60%;
+	background-color:rgba(255, 163,26,.95);
+	border-radius: 2px;
+	padding:.5em;
+}
+
+.os-animation{
+	animation: bounceIn 2s;
+}
+
+ .devname span{
+	font-family: Fjalla One, sans-serif;
+	color: rgb(38, 38, 38);
+	text-shadow: 2px 2px rgba(255, 255, 255,.4);
+	padding: 0rem .3rem 0rem .3rem;
+	border-radius: 5px;
+}
+
+.fa-desktop{
+	color: rgb(38, 38, 38);
+	text-shadow: 2px 2px rgba(255, 255, 255,.4);
+	font-size: 1.1em;
+}
+
+.profile{
+	height: 50%;
+	width:50%;
+	/*filter: grayscale(70%);*/
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	
+}
+
+.profile-pic-container{
+	padding-top: 2em;
+	text-align: center;
+}
+
+.profile-content{
+	text-align: center;
+	font-size: 1.5em;
+	font-family: Source Sans Pro, sans-serif;
+}
+
+.profile-content-title{
+	padding-top: 1em;
+	font-family: Fjalla One, sans-serif;
+	text-align: justify;
+	padding-left: 3em;
+}
+.progress{
+		margin: 1.2em;
+		height: 10%;
+		background-color: #92979c;
+		transition: unset;
+}
+
+
+.progress-bar {
+  width: 0;
+  font-size: 1.5em;
+  padding-top:.5em;
+  display: inline-block;
+  transition: unset;
+  margin-left: .2rem;
+	width:0;
+	animation: progress 1.5s forwards;
+	.title{
+		opacity: 0;
+		animation: show 0.35s forwards 0.5s;
+	}
+}
+@keyframes progress{
+	from{width: 0;}
+	to{width: 100%;}
+}
+@keyframes show{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+
+.pro{
+	background-color:rgba(255, 163,26,.95);
+}
+
+.skills{
+	background-color:rgba(0,0,0,.2);
+	padding: 1em;
+}
+
+.card-body,.card-footer{
+	text-align: center;
+}
+
+.card-title{
+	 
+	width:80%;
+}
+.card{
+	background-color:rgba(255, 163,26,.95);
+}
+
+.card-footer{
+	background-color:rgba(242, 128, 13,.9);	
+}
+#contact{
+	height: 130vh;
+	background-image:url("../images/apple.jpeg");
+	background-size: cover;
+	/*background: rgba(0,0,0,.5);*/
+	clip-path: polygon(50% 35%, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0% 25%);
+	width: 100%;
+	
+}
+.contact{
+	height: 130vh;
+	width:100%;
+	background: rgba(0,0,0,.4);
+}
+.contact-title{
+	margin-top: 7em;
+}
+.form-control{
+	background: rgba(255,255,255,.7);
+	font-size: 1em;
+
+}
+.submit-btn{
+	background-color:rgba(255, 163,26,.95);
+	color: rgba(0,0,0,.8);
+	font-style:bold;
+}
+
+.form-control::placeholder {
+	color: rgba(0,0,0,.8);
+	opacity: 1;
+	font-size: bold;
+	font-size: 1em;
+	font-family: Source Sans Pro, sans-serif;
+}
+.avatar-controller{
+	height: 6em;
+	width: 6em;
+	border-radius: 100%;
+	border: .2em solid #666666;
+	background-color:rgba(255, 163,26,.5);
+	display: inline-block;
+}
+
+footer{
+	height: 5em;
+	width: 100%;
+	background-color:rgba(255, 163,26,1);
+	margin: 0 auto;
+	align-items: center;
+	display: flex;
+ 	justify-content: center;
+ }
+h1{
+	font-family: Fjalla One, sans-serif;
+	color: rgba(0,0,0,.8);
+}
+
+.card-img-top {
+	height: 30vh;
+}
